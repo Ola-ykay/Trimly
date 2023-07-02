@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import QRCodeComponent from "./QRCodeComponent";
 import { GiBoltCutter } from "react-icons/gi";
 import styles from "./UrlShortener.module.css";
