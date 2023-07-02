@@ -1,0 +1,184 @@
+.signup_cont {
+  background: #ffffff;
+}
+.signup_logo img {
+  padding: 20px;
+}
+
+.shortener_vector {
+  height: 40%;
+  width: 40%;
+  margin-left: -15px;
+}
+.signup_wrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.signup_section {
+  padding-top: 35px;
+}
+.signup_section > p {
+  color: #5c6f7f;
+  text-align: center;
+  margin: auto 15%;
+}
+.signup_section_btns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+}
+.signup_section_btns > button {
+  background: #005ae2;
+  padding: 10px 18px;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-weight: lighter;
+  /* line-height: 15px; */
+  display: block;
+  align-items: center;
+  cursor: pointer;
+}
+
+.signup_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup_form > div > h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 10px;
+  line-height: 5px;
+  margin-bottom: 20px;
+}
+
+.signup_form > div > h2:before {
+  content: "";
+  position: absolute;
+  left: 57%;
+  width: 13%;
+  border: 1px solid #a0b1c0;
+  /* transform: translateY(-50%); */
+}
+.signup_form > div > h2:after {
+  content: "";
+  position: absolute;
+  right: 14%;
+  width: 13%;
+  border: 1px solid #a0b1c0;
+  /* transform: translateY(50%); */
+}
+
+.signup_form > input {
+  padding: 15px;
+  width: 400px;
+  margin-bottom: 25px;
+  border: 2px solid#005AE2;
+  outline: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #a0b1c0;
+  line-height: 15px;
+  display: block;
+  align-items: center;
+}
+.signup_form > div > input {
+  padding: 15px;
+  width: 400px;
+  margin-bottom: 25px;
+  border: 2px solid#005AE2;
+  outline: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 15px;
+  margin-left: 10px;
+  /* display: block; */
+  align-items: center;
+}
+/* form > div{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      } */
+input[type="password"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="password"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.show_password {
+  position: relative;
+  right: 8%;
+  bottom: -3px;
+}
+.submit_btn {
+  background: #005ae2;
+  padding: 12px;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  width: 400px;
+  cursor: pointer;
+}
+.submit_btn a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.signup_forgot_password {
+  margin-top: -3px;
+  margin-bottom: 12px;
+  /* text-align: right; */
+}
+
+.signup_forgot_password > a {
+  color: #005ae2;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 15px;
+  text-decoration: none;
+}
+.signup_login {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.signup_login > button {
+  border: none;
+  background: transparent;
+}
+.signup_login > button > a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #005ae2;
+}
+.signup_login > p {
+  font-size: 14px;
+  color: #5c6f7f;
+}
+
+.signup_footer {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 10px;
+  text-align: center;
+  color: #a0b1c0;
+}

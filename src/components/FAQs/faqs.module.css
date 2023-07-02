@@ -1,0 +1,106 @@
+/* FAQSection.css */
+.faqs{
+    position: relative;
+}
+.faq_section {
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+  padding-bottom: 100px;
+ 
+}
+.faq_line {
+  position: relative;
+  top: 47px;
+  left: 45%;
+}
+
+.faq_heading {
+  font-size: 40px;
+  line-height: 32px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+.faq_item {
+  width: 58%;
+  margin: auto;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.faq_details {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.question {
+  display: inline-block;
+  color: #141414;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+  
+}
+.faq_item:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+right: 0%;
+  width: 91%;
+  border: 1px solid #D6D6D6;
+}
+
+.answer {
+  display: block;
+  font-size: 16px;
+  line-height: 32px;
+  width: 90%;
+  margin: auto;
+  margin-left: 5rem;
+}
+
+.icon {
+  
+  font-size: 30px;
+  font-weight: 500;
+}
+.faq_vec_1{
+    position: absolute;
+    top: 69%;
+    right: 0;
+  
+}
+.faq_vec_2{
+    position: absolute;
+    top: 66.6%;
+    right: 0;
+  
+}
+.faq_vec_3{
+    position: absolute;
+    top: 62%;
+    right: 0;
+  
+}
+.faq_vec_4{
+    position: absolute;
+    top: 4%;
+    left: 0;
+  
+}
+.faq_vec_5{
+    position: absolute;
+    top: 2%;
+    left: 0;
+  
+}
+.faq_vec_6{
+    position: absolute;
+    top: 0%;
+    left: 0;
+  
+}

@@ -1,0 +1,141 @@
+.shortener_container{
+    background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+   width: 100%;
+   padding: 80px;
+   position:relative;
+}
+.shortener_bg1{
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+.shortener_bg2{
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
+
+
+.shortener_container > .shortener_sec{
+    background: #ffffff;
+    height: 300px;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    padding:15px;
+    position: relative;
+}
+.two_inputs{
+    display: flex;
+    gap: 10px;
+}
+.two_inputs > div > input::placeholder{
+    color: #005AE2;
+}
+.shortener_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    color: #005AE2;
+    
+}
+.shortener_form > div > input{
+    width: 310px;
+    padding: 10px;
+    border: 1px solid#005AE2;
+    border-radius:10px;
+    outline: none;
+    margin-bottom: 20px;
+    
+}
+.shortener_form > div > input::placeholder{
+    color: #005AE2;
+}
+.shortener_form > .two_inputs > div > select{
+    width: 150px;
+    padding: 10px;
+    border: 1px solid#005AE2;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    color: #005AE2;
+}
+.shortener_form > .two_inputs > div > select > option{
+    color: #005AE2;
+}
+.shortener_form > .two_inputs > div > input {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid#005AE2;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    
+}
+.shortener_form button{
+    width: 310px;
+    padding: 10px;
+    border: 1px solid#005AE2;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    background: #005AE2;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.extras{
+    color: #005AE2;
+    line-height: 20px;
+    font-size: 13px;
+}
+.extras span{
+    font-weight: bold;
+}
+.qrcode_container{
+    background: #ffffff;
+    /* width: 400px;
+    height: 380px; */
+    padding: 5px 30px;
+    position: absolute;
+    top: 22%;
+    right: 12%;
+    border-radius: 10px;
+}
+.qrcode_container > p{
+    padding-top: 15px;
+}
+
+.qrcode_button{
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+   
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.qrcode{
+    height: 150px;
+    width: 150px;
+    padding: 5px 0;
+    
+}
+.qrcode_button > button{
+  padding: 5px;
+  cursor: pointer;
+  
+}
+.copied_message{
+    font-size: 10px;
+  
+}
+/* .qrcode_container > p{
+    padding: 10px;
+} */

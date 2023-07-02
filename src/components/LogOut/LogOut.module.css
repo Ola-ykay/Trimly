@@ -1,0 +1,75 @@
+.logout_cont{
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.logout_logo img{
+    padding: 20px;
+}
+
+.logout{
+    
+    padding: 20px;  
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-top: 100px; */
+
+}
+
+.logout_button{
+    background: #005ae2;
+    padding: 12px;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: lighter;
+    /* margin-bottom: 10px; */
+    width: 100px;
+    cursor: pointer;
+}
+.construction_cont{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    /* padding-top: 100px; */
+}
+.construction_cont > div{
+    width: 500px;
+
+}
+.construction_cont > div > h2 {
+font-size: 50px;
+font-weight: bold;
+
+}
+.construction_cont > div > h3{
+font-size: 20px;
+margin-bottom: 10px;
+}
+.construction_cont > div > p{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.construction_cont > div > button{
+    background: #005ae2;
+    padding: 12px;
+    font-size: 14px;
+   
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: lighter;
+    
+    width: 100px;
+    cursor: pointer;   
+}
+.construction_cont > div > button > a{
+    text-decoration: none;
+    color: #ffffff;
+}
