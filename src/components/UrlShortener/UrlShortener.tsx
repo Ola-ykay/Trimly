@@ -5,7 +5,7 @@ import styles from "./UrlShortener.module.css";
 import { LuCopy } from "react-icons/lu";
 import { HiOutlineShare } from "react-icons/hi";
 
-type CustomDomain = "domain1" | "domain2" | "domain3";
+type CustomDomain = "domain1" | "domain2" | "domain3" | "domain4";
 
 interface FormState {
   url: string;
@@ -102,6 +102,7 @@ const UrlShortener: React.FC = () => {
             <option value="domain1">Domain 1</option>
             <option value="domain2">Domain 2</option>
             <option value="domain3">Domain 3</option>
+            <option value="domain4">Domain 4</option>
           </select>
         </div>
         <div>
