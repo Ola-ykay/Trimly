@@ -39,7 +39,7 @@
   outline: none;
   border-radius: 2px;
   font-weight: lighter;
-  /* line-height: 15px; */
+  
   display: block;
   align-items: center;
   cursor: pointer;
@@ -66,7 +66,7 @@
   left: 57%;
   width: 13%;
   border: 1px solid #a0b1c0;
-  /* transform: translateY(-50%); */
+ 
 }
 .signup_form > div > h2:after {
   content: "";
@@ -74,7 +74,7 @@
   right: 14%;
   width: 13%;
   border: 1px solid #a0b1c0;
-  /* transform: translateY(50%); */
+ 
 }
 
 .signup_form > input {
@@ -102,14 +102,10 @@
   font-weight: lighter;
   line-height: 15px;
   margin-left: 10px;
-  /* display: block; */
+ 
   align-items: center;
 }
-/* form > div{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      } */
+
 input[type="password"] {
   appearance: none;
   -webkit-appearance: none;
@@ -145,7 +141,7 @@ input[type="password"] {
 .signup_forgot_password {
   margin-top: -3px;
   margin-bottom: 12px;
-  /* text-align: right; */
+
 }
 
 .signup_forgot_password > a {

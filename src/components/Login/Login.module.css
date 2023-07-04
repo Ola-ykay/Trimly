@@ -29,7 +29,7 @@
 
 .login_section > p {
   color: #5c6f7f;
-  /* font-weight: lighter; */
+ 
   text-align: center;
   margin: auto 15%;
 }
@@ -48,7 +48,7 @@
   outline: none;
   border-radius: 2px;
   font-weight: lighter;
-  /* line-height: 15px; */
+ 
   display: block;
   align-items: center;
   cursor: pointer;
@@ -62,7 +62,7 @@
   padding: 10px;
   line-height: 5px;
   margin-bottom: 20px;
-  /* position: relative; */
+ 
 }
 
 .login_form > div > h2:before {
@@ -71,7 +71,7 @@
  left: 57%;
   width: 13%;
   border: 1px solid #a0b1c0;
-  /* transform: translateY(-50%); */
+
 }
 .login_form > div > h2:after {
   content: "";
@@ -80,8 +80,7 @@
   width: 13%;
   border: 1px solid #a0b1c0;
 }
-   /* transform: translateY(50%); 
-} */
+  
 
 .login_form > input {
   padding: 15px;
@@ -108,14 +107,10 @@
   font-weight: lighter;
   line-height: 15px;
   margin-left:px;
-  /* display: block; */
+ 
   align-items: center;
 }
-/* form > div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
+
 
     input[type="password"]{
       appearance: none;
@@ -146,9 +141,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  /* align-items: center; */
-  /* justify-content: right; */
-  /* text-align: right; */
+  
 }
 
 .login_forgot_password > button {

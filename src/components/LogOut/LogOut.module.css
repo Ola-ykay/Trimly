@@ -10,10 +10,10 @@
 .logout{
     
     padding: 20px;  
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-   padding-top: 100px; */
+   padding-top: 100px;
 
 }
 
@@ -26,7 +26,7 @@
     outline: none;
     border-radius: 10px;
     font-weight: lighter;
-    /* margin-bottom: 10px; */
+    
     width: 100px;
     cursor: pointer;
 }
@@ -36,8 +36,6 @@
     justify-content: center;
     align-items: center;
     
-    
-    /* padding-top: 100px; */
 }
 .construction_cont > div{
     width: 500px;

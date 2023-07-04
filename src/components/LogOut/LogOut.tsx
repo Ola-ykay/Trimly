@@ -9,13 +9,14 @@ import { Link } from "react-router-dom";
 const LogOut: React.FC = () => {
   const auth = getAuth(app);
   const navigate = useNavigate();
+  
   const handleLogout = () => {
     signOut(auth)
       .then(() => {
         // Sign-out successful.
         console.log("logged out");
         alert("You have successfully logged out");
-        navigate("/login");
+        navigate("/");
       })
       .catch((error) => {
         // An error happened.
@@ -41,7 +42,7 @@ const LogOut: React.FC = () => {
         </div>
       </div>
       <div className={styles.construction_cont}>
-        <div>
+        <div className={styles.construction_sec}>
           <h2>Oops!</h2>
 <h3>Under construction</h3>
 <p>We are working to make this app more enjoyable, In the meantime, trim your links on the home page</p>

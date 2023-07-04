@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { BiLogoApple } from "react-icons/bi";
-import { signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import styles from './Signup.module.css'
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Footer from "../Footer/Footer";
-import Login from "../Login/Login";
-import { googleProvider } from "../../config/config";
+// import Login from "../Login/Login";
+// import { googleProvider } from "../../config/config";
 import app from "../../config/config";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 
@@ -25,7 +25,7 @@ createUserWithEmailAndPassword(auth, email, password)
     const user = userCredential.user;
     console.log(user);
     alert("You have successfully created an account")
-    navigate('/')
+    navigate('/login')
     // ...
   })
   .catch((error) => {
@@ -88,17 +88,27 @@ createUserWithEmailAndPassword(auth, email, password)
     setShowRetypePassword(!showRetypePassword);
   };
 
-  const [value, setValue] = useState("");
+  
   const handleGoogleClick = () => {
-    signInWithPopup(auth, googleProvider).then((data) => {
-      setValue(data.user?.email || "");
-      localStorage.setItem("email", data.user?.email || "");
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider )
+    .then((result) => {
+      // Signup with Google successful
+      const credential =  GoogleAuthProvider.credentialFromResult(result);
+      const user = result.user;
+      console.log(user, credential);
+      // Redirect to the home page or any other desired route
+      navigate("/");
+    })
+    .catch((error) => {
+      // Handle Google signup errors
+      console.error(error);
     });
   };
 
-  useEffect(() => {
-    setValue(localStorage.getItem("email") || "");
-  }, []);
+  // useEffect(() => {
+  //   setValue(localStorage.getItem("email") || "");
+  // }, []);
 
   return (
     <>
@@ -109,9 +119,7 @@ createUserWithEmailAndPassword(auth, email, password)
          
     <div className={styles.signup_wrapper}>
     <img src="./assets/shortener.png" alt="shortener_vector"  className={styles.shortener_vector}/>
-      {value ? (
-        <Login />
-      ) : (
+     
         <div className={styles.signup_section}>
           <p>Sign up with:</p>
           <div className={styles.signup_section_btns}>
@@ -193,7 +201,7 @@ createUserWithEmailAndPassword(auth, email, password)
             <p>Scissor's<i> Terms of Service</i>, <i>Privacy Policy</i> and <i>Acceptable Use Policy</i>.</p>
           </div>
         </div>
-      )}
+      
     </div>
     </div>
     <Footer />

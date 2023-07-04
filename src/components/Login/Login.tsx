@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+
 import { FcGoogle } from "react-icons/fc";
 import { BiLogoApple } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
-import { googleProvider } from "../../config/config";
+// import { googleProvider } from "../../config/config";
 import app from "../../config/config";
-import { sendPasswordResetEmail, signInWithPopup } from "firebase/auth";
+import { sendPasswordResetEmail, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Footer from "../Footer/Footer";
-import LogOut from "../LogOut/LogOut";
+// import LogOut from "../LogOut/LogOut";
 
 
 const Login: React.FC = () => {
@@ -24,7 +25,7 @@ const handleLogin =()=>{
       // Signed in 
       const user = userCredential.user;
       console.log(user);
-      navigate('/logout') 
+     navigate("/logout"); 
       // ...
     })
     .catch((error) => {
@@ -62,17 +63,36 @@ const handleForgotPassword = () => {
     setShowPassword(!showPassword);
   };
 
-  const [value, setValue] = useState("");
-  const handleGoogleClick = () => {
-    signInWithPopup(auth, googleProvider).then((data) => {
-      setValue(data.user?.email || "");
-      localStorage.setItem("email", data.user?.email || "");
-    });
-  };
+  
 
-  useEffect(() => {
-    setValue(localStorage.getItem("email") || "");
-  }, []);
+  const handleGoogleClick = () => {
+ const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // Signup with Google successful
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const user = result.user;
+        console.log(user, credential);
+        // Redirect to the home page or any other desired route
+        navigate("/");
+      })
+      .catch((error) => {
+        // Handle Google signup errors
+        console.error(error);
+      });
+  }
+  
+  // const handleGoogleClick = () => {
+  //   signInWithPopup(auth, googleProvider).then((data) => {
+  //     setValue(data.user?.email || "");
+  //     localStorage.setItem("email", data.user?.email || "");
+  //     navigate("/"); 
+  //   });
+  // };
+
+  // useEffect(() => {
+  //   setValue(localStorage.getItem("email") || "");
+  // }, []);
 
   return (
     <>
@@ -83,9 +103,7 @@ const handleForgotPassword = () => {
     <div className={styles.login_wrapper}>
       
       <img src="./assets/shortener.png" alt="shortener_vector"  className={styles.shortener_vector}/>
-      {value ? (
-        <LogOut />
-      ) : (
+      
         <div className={styles.login_section}>
           <p>Login with:</p>
           <div className={styles.login_section_btns}>
@@ -146,7 +164,7 @@ const handleForgotPassword = () => {
             <p>Scissor's<i> Terms of Service</i>, <i>Privacy Policy</i> and <i>Acceptable Use Policy</i>.</p>
           </div>
         </div>
-      )}
+    
     </div>
     </div>
     <Footer />
@@ -155,3 +173,7 @@ const handleForgotPassword = () => {
 };
 
 export default Login;
+
+// {value ? (
+//   <LogOut />
+// ) : (
