@@ -74,7 +74,7 @@ const handleForgotPassword = () => {
         const user = result.user;
         console.log(user, credential);
         // Redirect to the home page or any other desired route
-        navigate("/");
+        navigate("/logout");
       })
       .catch((error) => {
         // Handle Google signup errors
