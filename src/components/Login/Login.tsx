@@ -174,6 +174,3 @@ const handleForgotPassword = () => {
 
 export default Login;
 
-// {value ? (
-//   <LogOut />
-// ) : (

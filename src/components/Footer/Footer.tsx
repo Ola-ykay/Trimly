@@ -112,16 +112,10 @@ const Footer: React.FC = () => {
       <div className={styles.footer_bottom}>
         <p>Term of Service | Security | Scissor 2023</p>
       </div>
-      <div className={styles.footer_images}>
-        <img src="./assets/footer_vec_1.png" alt="" className={styles.footer_vec_1} />
-        <img src="./assets/footer_vec_2.png" alt=""  className={styles.footer_vec_2}/>
-        <img src="./assets/footer_vec_3.png" alt=""  className={styles.footer_vec_3}/>
-      </div>
-      <div className={styles.footer_images_2}>
-        <img src="./assets/footer_vec_4.png" alt=""  className={styles.footer_vec_4}/>
-        <img src="./assets/footer_vec_5.png" alt=""  className={styles.footer_vec_5}/>
-        <img src="./assets/footer_vec_6.png" alt=""  className={styles.footer_vec_6}/>
-      </div>
+     <div>
+      <img src="./assets/footer_bg1.png" alt="" className={styles.footer_bg1} />
+      <img src="./assets/footer_bg2.png" alt="" className={styles.footer_bg2} />
+     </div>
       </div>
     </>
   );

@@ -94,14 +94,9 @@ const FAQSection: React.FC = () => {
       ))}
     </div>
     <div className={styles.faq_bg_images}>
-        <img src="./assets/faq_vec_1.png" alt="" className={styles.faq_vec_1} />
-        <img src="./assets/faq_vec_2.png" alt="" className={styles.faq_vec_2} />
-        <img src="./assets/faq_vec_3.png" alt="" className={styles.faq_vec_3} />
-    </div>
-    <div>
-      <img src='./assets/faq_vec_4.png' alt="" className={styles.faq_vec_4} />
-      <img src="./assets/faq_vec_5.png" alt="" className={styles.faq_vec_5} />
-      <img src="./assets/faq_vec_6.png" alt="" className={styles.faq_vec_6} />
+        <img src="./assets/faq_vec1.png" alt="" className={styles.faq_vec1} />
+        <img src="./assets/faq_vec2.png" alt="" className={styles.faq_vec2} />
+        
     </div>
     </div>
     </>

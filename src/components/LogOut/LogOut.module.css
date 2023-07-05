@@ -71,3 +71,79 @@ margin-bottom: 10px;
     text-decoration: none;
     color: #ffffff;
 }
+
+/* ******mobile responsiveness ****** */
+@media screen and (max-width: 768px) {
+    .construction_cont{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    .construction_sec{
+        text-align: center;
+
+    }
+    .construction_sec p{
+       width: 300px;
+        margin: 0 auto;
+    }
+    /* .logout_cont{
+        flex-direction: column;
+    }
+    .logout_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logout_logo img{
+        padding: 20px;
+    }
+    .logout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .logout_button{
+        width: 100%;
+    }
+    .construction_cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .construction_cont > div{
+        width: 100%;
+    }
+    .construction_cont > div > h2 {
+        font-size: 30px;
+        font-weight: bold;
+        
+        }
+        .construction_cont > div > h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+        .construction_cont > div > p{
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+        .construction_cont > div > button{
+            background: #005ae2;
+            padding: 12px;
+            font-size: 14px;
+           
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-weight: lighter;
+            
+            width: 100%;
+            cursor: pointer;   
+        }
+        .construction_cont > div > button > a{
+            text-decoration: none;
+            color: #ffffff;
+        } */
+}

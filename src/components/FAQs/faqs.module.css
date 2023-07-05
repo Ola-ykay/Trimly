@@ -3,15 +3,16 @@
     position: relative;
 }
 .faq_section {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Josefin Sans', sans-serif; 
   background: #ffffff;
-  padding-bottom: 100px;
+  padding: 100px 0;
+  position: relative;
  
 }
 .faq_line {
-  position: relative;
-  top: 47px;
-  left: 45%;
+  position: absolute;
+ left: 44.5%;
+ top: 9%;
 }
 
 .faq_heading {
@@ -68,39 +69,31 @@ right: 0%;
   font-size: 30px;
   font-weight: 500;
 }
-.faq_vec_1{
+.faq_vec1{
     position: absolute;
-    top: 69%;
-    right: 0;
-  
-}
-.faq_vec_2{
-    position: absolute;
-    top: 66.6%;
-    right: 0;
-  
-}
-.faq_vec_3{
-    position: absolute;
-    top: 62%;
-    right: 0;
-  
-}
-.faq_vec_4{
-    position: absolute;
-    top: 4%;
+    top: 0;
     left: 0;
   
 }
-.faq_vec_5{
+.faq_vec2{
     position: absolute;
-    top: 2%;
-    left: 0;
+    bottom: 0;
+    right: 0;
   
 }
-.faq_vec_6{
-    position: absolute;
-    top: 0%;
-    left: 0;
+
+ /* ******mobile responsiveness ****** */
+ @media screen and (max-width: 768px) {
+  .faq_line{
+    top: 6.5%;
+    left: 33%;
+  }
+  .question{
+    font-size: 14px;
+  }
+  .answer{
+    font-size: 12px;
+    margin: auto;
   
-}
+  }
+ }

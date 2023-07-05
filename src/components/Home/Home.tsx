@@ -173,12 +173,9 @@ const Home = () => {
           <button className={styles.url_button}>
             <Link to="/signup">Get Started</Link>
           </button>
-          <img src="./assets/bg_vector1.png" alt="" className={styles.vec1} />
-          <img src="./assets/bg_vector1.png" alt="" className={styles.vec2} />
-          <img src="./assets/bg_vector1.png" alt="" className={styles.vec3} />
-          <img src="./assets/bg_vector2.png" alt="" className={styles.vec_4} />
-          <img src="./assets/bg_vector2.png" alt="" className={styles.vec_5} />
-          <img src="./assets/bg_vector2.png" alt="" className={styles.vec_6} />
+          <img src="./assets/bg_vector1.png" alt="" className={styles.bg_vec1} />
+          <img src="./assets/bg_vector2.png" alt="" className={styles.bg_vec2} />
+          
         </div>
       </div>
 

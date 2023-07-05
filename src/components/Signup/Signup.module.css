@@ -178,3 +178,34 @@ input[type="password"] {
   text-align: center;
   color: #a0b1c0;
 }
+
+ /* *******mobile responsiveness******* */
+
+ @media screen and (max-width: 768px) {
+  .signup_wrapper{
+    flex-direction: column;
+  }
+  .shortener_vector{
+    display: none;
+  }
+  .signup_form > div > h2:before {
+    top: 42%;
+    left: 3%;
+     width: 40%;
+    }
+     .signup_form > div > h2:after {
+       top: 42%;
+       right: 3%;
+       width: 40%;
+     }
+     .signup_form > input{
+        width: 350px;
+     }
+     .signup_form > div > input{
+      width: 350px;
+
+ }
+ .submit_btn{
+  width: 350px;
+ }
+}

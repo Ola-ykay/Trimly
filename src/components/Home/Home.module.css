@@ -256,7 +256,7 @@ span {
   padding: 15px 40px;
   font-size: 16px;
   line-height: 12px;
-  color: #ffffff;
+  
   background: #005ae2;
   border-radius: 100px;
   border: none;
@@ -266,37 +266,31 @@ span {
   text-decoration:none;
   color:#fff;
 }
-.vec1 {
+.bg_vec1{
   position: absolute;
-  top: 70%;
-  left: 77.7%;
-  width: 300px;
-  /* height: 80px; */
+  top: 0%;
+  left: 0%;
+
 }
-.vec2 {
+.bg_vec2{
+  
   position: absolute;
-  top: 50%;
-  left: 65.3%;
-  width: 500px;
+  top: 0%;
+right: 0%;
+ 
 }
-.vec3 {
-  position: absolute;
-  top: 36%;
-  left: 52.3%;
-  width: 650px;
+ /* ******mobile responsiveness ****** */
+@media screen and (max-width: 768px) {
+ 
+  .bg_vec2{
+    display: none
+  }
+  .url_heading{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .url_button{
+    font-size: 12px;
+  }
 }
-.vec_4 {
-  position: absolute;
-  top: 1%;
-  right: 80%;
-}
-.vec_5 {
-  position: absolute;
-  top: 2%;
-  right: 75%;
-}
-.vec_6 {
-  position: absolute;
-  top: 1%;
-  right: 70%;
-}
+

@@ -184,3 +184,48 @@
   text-align: center;
   color: #a0b1c0;
 }
+
+ /* *******mobile responsiveness******* */
+
+@media screen and (max-width: 768px) {
+  .login_wrapper{
+    flex-direction: column;
+/* padding: 50px; */
+  }
+  .shortener_vector{
+   display: none;
+  }
+  .login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 300px; */
+  }
+  .login_form > div > h2:before {
+   top: 39%;
+   left: 3%;
+    width: 40%;
+   }
+    .login_form > div > h2:after {
+      top: 39%;
+      right: 3%;
+      width: 40%;
+    }
+    .login_form > div > input{
+      
+      width: 350px;
+      margin-left: 10px;
+      /* margin: auto; */
+      /* max-width: 100%; */
+      
+    }
+    .login_form > input{
+      width: 350px;
+      /* margin: auto; */
+    
+    }
+    .submit_btn{
+      width: 350px;
+    }
+}

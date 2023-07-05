@@ -99,27 +99,25 @@
     background: #ffffff;
     /* width: 400px;
     height: 380px; */
-    padding: 5px 30px;
+    padding: 5px 25px;
     position: absolute;
-    top: 22%;
+    top: 20%;
     right: 12%;
     border-radius: 10px;
 }
 .qrcode_container > p{
-    padding-top: 15px;
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    color: #005AE2;
 }
 
 .qrcode_button{
-    color: #ffffff;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-   
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
+    justify-content: center;
 }
 .qrcode{
     height: 150px;
@@ -130,12 +128,81 @@
 .qrcode_button > button{
   padding: 5px;
   cursor: pointer;
-  
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color:#005AE2;
 }
 .copied_message{
     font-size: 10px;
   
 }
-/* .qrcode_container > p{
-    padding: 10px;
-} */
+.qrcode_close_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+ /* ******mobile responsiveness ****** */
+ @media screen and (max-width: 768px) {
+    .shortener_bg2{
+        display: none;
+    }
+    .shortener_container > .shortener_sec{
+       height: 350px;
+       width: 350px;
+       padding: 30px;
+        margin: auto -25px;
+    }
+    .two_inputs{
+        display: flex;
+        flex-direction: column;
+        /* gap: 10px; */
+    }
+    .shortener_form > div > input{
+        width: 250px;
+    }
+    .shortener_form > .two_inputs > div > select{
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    .shortener_form > .two_inputs > div > input {
+        width: 250px;
+        margin-bottom: 20px;
+
+    }
+    .shortener_form button{
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    .qrcode_container{
+        right: 26%;
+        top: 23%;
+    }
+    .overlay {
+        /* position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: red; */
+        /* position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none; */
+      }
+      .shortener_sec.backdrop {
+      background-color: rgba(255, 255, 255, 0.5);
+        
+      }
+        .shortener_sec.backdrop > .shortener_form{
+            display: none;
+        }
+           
+        }
+      
