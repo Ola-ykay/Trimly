@@ -292,11 +292,18 @@ right: 0%;
     font-size: 30px;
     /* line-height: 40px; */
   }
-  .url_button{
-   
-  }
+  
   .url_button a{
     font-size: 12px;
   }
 }
 
+@media screen and (max-width: 400px) {
+  .url_sec{
+   height: 400px;
+  }
+  .url_heading{
+    font-size: 30px;
+    line-height: 60px;
+  }
+}

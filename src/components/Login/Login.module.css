@@ -129,7 +129,7 @@
   color: #ffffff;
   border: none;
   outline: none;
-  border-radius: 50px;
+  border-radius: 10px;
   font-weight: lighter;
   margin-bottom: 10px;
   width: 400px;
@@ -227,5 +227,28 @@
     }
     .submit_btn{
       width: 350px;
+    }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .login_form > div > h2:before {
+   top: 32%;
+   left: 3%;
+    width: 40%;
+   }
+    .login_form > div > h2:after {
+      top: 32%;
+      right: 3%;
+      width: 40%;
+    }
+    .login_form > div > input{
+      width: 320px;
+    }
+    .login_form > input{
+      width: 320px;
+    }
+    .submit_btn{
+      width: 320px;
     }
 }

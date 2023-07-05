@@ -98,5 +98,17 @@ right: 0%;
   }
   .faq_item{
     width: 100%;
+
   }
+ }
+
+ @media screen and (max-width: 400px) {
+  .faq_line{
+    top: 7%;
+    left: 33%;
+  }
+
+.faq_details{
+    margin-right: 5px;
+ }
  }
