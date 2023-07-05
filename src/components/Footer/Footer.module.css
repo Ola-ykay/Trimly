@@ -75,10 +75,11 @@ font-family: 'Josefin Sans', sans-serif;
     }
     .footer_sec{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 40px;
-        row-gap: 20px;
-        column-gap: 20px;
+        grid-template-columns: repeat(2, 180px);
+        /* padding: 0 10px; */
+        row-gap: 20px; 
+        column-gap: 0px;
+        padding-left: 30px;
     
     }
     .footer_socials{

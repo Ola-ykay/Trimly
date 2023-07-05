@@ -260,11 +260,12 @@ span {
   background: #005ae2;
   border-radius: 100px;
   border: none;
-  cursor: pointer;
+ 
 }
 .url_button a{
   text-decoration:none;
   color:#fff;
+  cursor: pointer;
 }
 .bg_vec1{
   position: absolute;
@@ -281,15 +282,20 @@ right: 0%;
 }
  /* ******mobile responsiveness ****** */
 @media screen and (max-width: 768px) {
- 
+ .url_sec{
+    height: 400px;
+ }
   .bg_vec2{
     display: none
   }
   .url_heading{
     font-size: 30px;
-    line-height: 40px;
+    /* line-height: 40px; */
   }
   .url_button{
+   
+  }
+  .url_button a{
     font-size: 12px;
   }
 }
