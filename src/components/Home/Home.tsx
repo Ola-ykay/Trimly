@@ -13,7 +13,7 @@ const Home = () => {
 
       <div className={styles.hero_section}>
         <h1 className={styles.heading}>
-          Optimize Your Online Experience with Our<br></br>
+          Optimize Your Online Experience with Our
           Advanced <span>URL Shortening</span> Solution
         </h1>
         <img src="./assets/underline.png" className={styles.underline} alt="" />
@@ -77,7 +77,7 @@ const Home = () => {
             <img src="./assets/line_2.png" alt="" className={styles.line_2} />
           </div>
           <h3 className={styles.feature_heading}>
-            Why choose <span>Scissors</span>
+            Why Choose <span>Scissors</span>
           </h3>
           <p className={styles.features_details}>
             Scissors is the hub of everything that has to do with your link
@@ -127,7 +127,7 @@ const Home = () => {
         <div className={styles.pricing_heading_sec}>
           <img src="./assets/line_2.png" alt="" className={styles.line_} />
           <h2 className={styles.pricing_title}>
-            A <span>price perfect</span> for your needs.
+            A <span>Price Perfect</span> For Your Needs.
           </h2>
           <p className={styles.pricing_details}>
             From catering for your personal, business, event, socials needs, you
