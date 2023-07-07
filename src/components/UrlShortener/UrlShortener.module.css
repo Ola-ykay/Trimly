@@ -154,6 +154,7 @@
        height: 350px;
        width: 350px;
        padding: 30px;
+       margin-left: -30px;
         margin: auto -25px;
     }
     .two_inputs{
@@ -194,7 +195,7 @@
 
 @media screen and (max-width: 400px) {
     .shortener_container > .shortener_sec{
-        margin: auto -45px;
+        margin: auto -35px;
         width: 300px;
 
     }

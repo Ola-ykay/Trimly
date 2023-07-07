@@ -214,10 +214,12 @@ input[type="password"] {
 
 @media screen and (max-width: 400px) {
   .signup_form > div > h2:after{
-    top: 34%;
+    /* top: 34%; */
+    display: none;
   }
   .signup_form > div > h2:before{
-    top: 34%;
+    /* top: 34%; */
+    display: none;
   }
   .signup_form > input{
     width: 320px;

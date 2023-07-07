@@ -233,14 +233,16 @@
 
 @media screen and (max-width: 400px) {
   .login_form > div > h2:before {
-   top: 32%;
+   /* top: 32%;
    left: 3%;
-    width: 40%;
+    width: 40%; */
+    display: none;
    }
     .login_form > div > h2:after {
-      top: 32%;
+      /* top: 32%;
       right: 3%;
-      width: 40%;
+      width: 40%; */
+      display: none;
     }
     .login_form > div > input{
       width: 320px;

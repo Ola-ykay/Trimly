@@ -11,13 +11,12 @@
 
 }
 body{
+  
   overflow-x: hidden;
-  /* margin: 0;
-  padding: 0; */
 
 }
 .container{
-  
+  overflow-x: hidden;
  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 
   
@@ -30,15 +29,15 @@ p{
 }
 
  /* ******mobile responsiveness ****** */
- @media screen and (max-width: 768px) {
-  body{
+ /* @media screen and (max-width: 768px) {
+ .container{
     overflow-x: hidden;
 
   }
- }
+ } */
  @media screen and (max-width: 400px) {
- body{
+ 
+  body{
     overflow-x: hidden;
-
   }
  }
