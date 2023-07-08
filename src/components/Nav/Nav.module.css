@@ -152,9 +152,10 @@
   z-index: 1;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 400px) {
   .navbar {
     flex-wrap: wrap;
+    overflow-x: hidden;
   }
 
   .navbar_logo {
@@ -186,13 +187,13 @@
     background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    transition: transform 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
    z-index: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     
   }
   .close_icon {
@@ -234,21 +235,11 @@
     flex-direction: column;
     gap:40px;
   }
-  .right_navbar_item_login a{
-    /* color: #ffffff; */
-  }
-  .nav_item {
- 
-  
-
+  .nav_menu .click{
+    right: 1px;
+    
   }
 
-  /* .dropdown_menu {
-    position: static;
-    box-shadow: none;
-    padding: 0;
-    background-color: transparent;
-  } */
 
   .open {
     transform: translateX(0);
@@ -301,10 +292,7 @@
     transition: right 0.5s ease-out;
    
   }
-  .nav_menu .open{
-    right: 1px;
-    
-  }
+  
   .nav_item {
  
     padding: 10px 0;

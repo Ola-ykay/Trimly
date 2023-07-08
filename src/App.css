@@ -36,7 +36,10 @@ p{
   }
  } */
  @media screen and (max-width: 400px) {
- 
+ .container{
+    overflow-x: hidden;
+
+  }
   body{
     overflow-x: hidden;
   }
