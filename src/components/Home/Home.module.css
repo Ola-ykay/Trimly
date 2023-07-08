@@ -318,6 +318,9 @@ right: 0%;
 }
 /****** mobile responsiveness ******/
 @media screen and (max-width: 400px) {
+  .hero_section{
+    overflow-x: hidden;
+  }
   .url_sec{
    height: 400px;
   }
@@ -349,11 +352,11 @@ right: 0%;
   }
   .signup_btn{
     height: 44px;
-    width: 142px;
+    width: 100px;
   }
   .signup_btn a{
     font-size: 10px;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
   }
   .more_btn{
     font-size: 10px;
@@ -411,8 +414,9 @@ right: 0%;
     text-align: center;
   }
   .features_details{
-    width: 350px;
+    width: 300px;
     text-align: justify;
+    /* padding: 0 10px; */
     
   }
   .list_details{
@@ -465,7 +469,7 @@ right: 0%;
     padding: 1rem 0;
     scroll-snap-type: x mandatory;
     scroll-padding: 0 1rem;
-    overflow-x: hidden;
+    
   }
 
 

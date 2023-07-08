@@ -195,12 +195,12 @@
 
 @media screen and (max-width: 400px) {
     .shortener_container > .shortener_sec{
-        margin: auto -35px;
+        margin: auto -55px;
         width: 300px;
 
     }
     .qrcode_container{
-        right: 23%;
+        right: 20%;
         
     }
 }

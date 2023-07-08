@@ -73,6 +73,7 @@ font-family: 'Josefin Sans', sans-serif;
     .footer_container{
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
     .footer_sec{
         display: grid;

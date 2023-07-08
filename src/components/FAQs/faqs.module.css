@@ -103,6 +103,14 @@ right: 0%;
  }
 
  @media screen and (max-width: 400px) {
+ 
+  .faq_item{
+    width: 100%;
+
+  } .faqs{
+    overflow: hidden;
+  }
+ 
   .faq_line{
     top: 7%;
     left: 33%;
