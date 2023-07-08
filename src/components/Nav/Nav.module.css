@@ -152,10 +152,10 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   .navbar_logo {
@@ -169,7 +169,7 @@
     display: block;
     color: #0065fe;
     position: absolute;
-   
+  
     right: 12%;
      
       top: 7%;
@@ -179,6 +179,7 @@
   .nav_menu {
     flex-basis: 100%;
     transform: translateX(100%);
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -187,7 +188,7 @@
     background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    transition: right 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
    z-index: 1;
     flex-direction: column;
     justify-content: center;
@@ -235,10 +236,10 @@
     flex-direction: column;
     gap:40px;
   }
-  .nav_menu .click{
+  /* .nav_menu .click{
     right: 1px;
     
-  }
+  } */
 
 
   .open {

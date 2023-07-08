@@ -1,46 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 /* @import url("https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880"); */
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 body{
-  
+  margin: 0;
+  padding: 0;
+}
+@viewport {
+  zoom: 1.0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   overflow-x: hidden;
-
 }
-.container{
-  overflow-x: hidden;
- background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-
-  
+h1,
+h2,
+h3,
+button {
+  font-family: "Roboto", sans-serif;
 }
-h1,h2,h3,button{
-  font-family: 'Roboto', sans-serif;
-}
-p{
-  font-family: 'Josefin Sans', sans-serif;
+p {
+  font-family: "Josefin Sans", sans-serif;
 }
 
- /* ******mobile responsiveness ****** */
- /* @media screen and (max-width: 768px) {
- .container{
+/* ******mobile responsiveness ****** */
+@media screen and (max-width: 768px) {
+ html, body{
     overflow-x: hidden;
 
   }
- } */
- @media screen and (max-width: 400px) {
- .container{
-    overflow-x: hidden;
-
-  }
-  body{
-    overflow-x: hidden;
-  }
- }
+}

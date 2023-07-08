@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
         </Link>
       </div>
      
-      <ul className={`${styles.nav_menu} ${menuOpen ? styles.open : styles.click}`}>
+      <ul className={`${styles.nav_menu} ${menuOpen ? styles.open : ""}`}>
         <li className={styles.nav_item} onClick={toggleMenu}>
           <a href="#url">My URLs</a>
         </li>

@@ -5,7 +5,7 @@
   color: #141414;
   line-height: 96px;
   margin-top: 7%;
-  width: 900px;
+  width: 80%;
   margin: 7% auto 0;
 }
 
@@ -317,7 +317,7 @@ right: 0%;
   }
 }
 /****** mobile responsiveness ******/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
   .hero_section{
     overflow-x: hidden;
   }
