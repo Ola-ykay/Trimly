@@ -1,3 +1,22 @@
+# Scissor - URL Shortening and QR Code Generation Platform
+Scissor is a powerful URL shortening and QR code generation platform that allows users to easily shorten long URLs, customize them, and track their performance. With Scissor, brief is the new black, making it effortless to share links and create a strong online presence. Our aim is to disrupt the URL shortening industry and provide users with a superior experience.
+
+## Snapshot
+
+![Screenshot (86)](https://github.com/Ola-ykay/Trimly/assets/106248524/099c3190-e5ff-4c53-9487-2e0ba295790e)
+
+## Link
+https://trimly.vercel.app/
+
+## Features
+<ul>
+<li>URL Shortening</li>
+  <li>Custom URLs</li>
+  <li>QR Code Generation</li>
+  <li>Analytics</li>
+</ul>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
