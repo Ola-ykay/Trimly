@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Helmet } from "react-helmet-async";
 import { FcGoogle } from "react-icons/fc";
 import { BiLogoApple } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
@@ -82,20 +82,15 @@ const handleForgotPassword = () => {
       });
   }
   
-  // const handleGoogleClick = () => {
-  //   signInWithPopup(auth, googleProvider).then((data) => {
-  //     setValue(data.user?.email || "");
-  //     localStorage.setItem("email", data.user?.email || "");
-  //     navigate("/"); 
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   setValue(localStorage.getItem("email") || "");
-  // }, []);
+  
 
   return (
     <>
+     <Helmet>
+        <title>Login</title>
+        <meta name="description" content="Login to Scissors web application" />
+        <link rel="canonical" href="/login" />
+      </Helmet>
     <div className={styles.login_cont}>
      <Link to="/" className={styles.login_logo}>
           <img src='./assets/logo.png' alt="logo" />

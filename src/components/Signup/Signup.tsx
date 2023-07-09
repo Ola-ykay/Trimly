@@ -11,6 +11,7 @@ import Footer from "../Footer/Footer";
 import app from "../../config/config";
 import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import {Helmet} from 'react-helmet-async';
 
 
 const Signup: React.FC = () => {
@@ -112,6 +113,11 @@ createUserWithEmailAndPassword(auth, email, password)
 
   return (
     <>
+    <Helmet>
+        <title>Signup</title>
+        <meta name="description" content="signup to Scissors web application" />
+        <link rel="canonical" href="/signup" />
+      </Helmet>
     <div className={styles.signup_cont}>
      <Link to="/" className={styles.signup_logo}>
           <img src='./assets/logo.png' alt="logo" />

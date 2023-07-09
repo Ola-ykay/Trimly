@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./faqs.module.css";
+import { motion } from "framer-motion";
 
 interface FAQItem {
   question: string;
@@ -74,10 +75,14 @@ const FAQSection: React.FC = () => {
    <>
 <div className={styles.faqs} id='faqs'>
     <div className={styles.faq_section}>
+      <motion.div initial={{x:-50}}
+            whileInView={{x:0}}
+            transition={{duration: 1, ease:"easeOut"}}>
       <div>
         <img src="./assets/line_2.png" alt="" className={styles.faq_line} />
       </div>
       <h2 className={styles.faq_heading}>FAQs</h2>
+      </motion.div>
       {FAQs.map((faq, index) => (
         <div key={index} className={styles.faq_item}>
           <div onClick={() => toggleFAQ(index)} className={styles.faq_details}>

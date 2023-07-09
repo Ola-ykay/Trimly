@@ -5,6 +5,7 @@ import app from "../../config/config";
 import { getAuth, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import {Helmet} from 'react-helmet-async';
 
 const LogOut: React.FC = () => {
   const auth = getAuth(app);
@@ -31,6 +32,11 @@ const LogOut: React.FC = () => {
   // }
   return (
     <>
+    <Helmet>
+        <title>Logout</title>
+        <meta name="description" content="Logout- Scissors web application" />
+        <link rel="canonical" href="/logout" />
+      </Helmet>
       <div className={styles.logout_cont}>
         <Link to="/" className={styles.logout_logo}>
           <img src="./assets/logo.png" alt="logo" />

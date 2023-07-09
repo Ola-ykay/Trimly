@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+// import firebase from 'firebase/app';
 import {getAuth, GoogleAuthProvider} from 'firebase/auth';
 // import  AppleSignInAuth  from 'apple-signin-auth';
 const firebaseConfig = {
@@ -16,6 +17,8 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 // const appleProvider = new AppleSignInAuth('apple.com');
+// const firestore = firebase.firestore();
+//  const db = app.firestore();
 
 export {auth, googleProvider};
 export default app;

@@ -4,6 +4,7 @@ import FAQs from "../FAQs/Faqs";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import UrlShortener from "../UrlShortener/UrlShortener";
+import { motion } from "framer-motion";
 
 
 const Home = () => {
@@ -12,16 +13,20 @@ const Home = () => {
       <Nav />
 
       <div className={styles.hero_section}>
-        <h1 className={styles.heading}>
+        <motion.h1 className={styles.heading} initial={{y:-60}} whileInView={{y:0}} 
+      transition={{duration:1,ease:"easeOut"}}>
           Optimize Your Online Experience with Our
           Advanced <span>URL Shortening</span> Solution
-        </h1>
+        </motion.h1>
         <img src="./assets/underline.png" className={styles.underline} alt="" />
-        <p className={styles.heading_details}>
+      <motion.p className={styles.heading_details} initial={{ opacity: 0, scale: 0.2 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 2, ease: "easeOut" }}>
           Personalize your shortened URLs to align with your brand identity.
           Utilize custom slugs, branded links, and domain customization options
           to reinforce your brand presence and enhance user engagement.
-        </p>
+        </motion.p>
         <div className={styles.btns}>
           <button className={styles.signup_btn}><Link to='/signup'>Sign Up</Link></button>
           <button className={styles.more_btn}>Learn more</button>
@@ -47,32 +52,38 @@ const Home = () => {
             One Stop.<br></br> Four <span>Possibilities</span>
           </h2>
         </div>
-        <div className={styles.section_data}>
-          <div className={styles.data_box}>
+        <div className={styles.section_data} >
+          <motion.div className={styles.data_box} initial={{y:60}} whileInView={{y:0}} 
+      transition={{duration:1,ease:"easeOut"}}>
             <h3 className={styles.data_heading}>3M</h3>
             <p className={styles.data_details}>Active users</p>
-          </div>
-          <div className={styles.data_box}>
+          </motion.div>
+          <motion.div className={styles.data_box} initial={{y:60}} whileInView={{y:0}} 
+      transition={{duration:1,ease:"easeOut"}}>
             <h3 className={styles.data_heading}>60M</h3>
             <p className={styles.data_details}>
               Links & QR<br></br> codes created
             </p>
-          </div>
-          <div className={styles.data_box}>
+          </motion.div>
+          <motion.div className={styles.data_box} initial={{y:60}} whileInView={{y:0}} 
+      transition={{duration:1,ease:"easeOut"}}>
             <h3 className={styles.data_heading}>1B</h3>
             <p className={styles.data_details}>
               Clicked & Scanned <br></br>connections
             </p>
-          </div>
-          <div className={styles.data_box}>
+          </motion.div>
+          <motion.div className={styles.data_box} initial={{y:60}} whileInView={{y:0}} 
+      transition={{duration:1,ease:"easeOut"}}>
             <h3 className={styles.data_heading}>300K</h3>
             <p className={styles.data_details}>App Integrations</p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       <div className={styles.features} id={styles.features}>
-        <div className={styles.features_section}>
+        <motion.div className={styles.features_section} initial={{x:-50}}
+            whileInView={{x:0}}
+            transition={{duration: 1, ease:"easeOut"}}>
           <div>
             <img src="./assets/line_2.png" alt="" className={styles.line_2} />
           </div>
@@ -86,45 +97,58 @@ const Home = () => {
             management and usage tracking with advance analytics for all of
             these is second to none.
           </p>
-        </div>
+        </motion.div>
 
         <div className={styles.features_list}>
-          <div className={styles.list_details} id='link_shortening'>
+          <motion.div className={styles.list_details} id='link_shortening' initial={{ opacity: 0, scale: 0.2 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1.5, ease: "easeOut" }}>
             <img src="./assets/icon_1.png" alt="" className={styles.icon} />
             <h2 className={styles.feature_list_heading}>URL Shortening</h2>
             <p className={styles.feature_list_details}>
               Scissor allows you to shorten URLs of your business, events.
               Shorten your URL at scale, URL redirects.
             </p>
-          </div>
-          <div className={styles.list_details} id="custom_codes">
+          </motion.div>
+          <motion.div className={styles.list_details} id="custom_codes" initial={{ opacity: 0, scale: 0.2 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1, ease: "easeOut" }}>
             <img src="./assets/icon_2.png" alt="" className={styles.icon} />
             <h2 className={styles.feature_list_heading}>Custom URLs</h2>
             <p className={styles.feature_list_details}>
               With Scissor, you can create custom URLs, with the length you
               want! A solution for socials and businesses.
             </p>
-          </div>
-          <div className={styles.list_details} id="qr_codes">
+          </motion.div>
+          <motion.div className={styles.list_details} id="qr_codes" initial={{ opacity: 0, scale: 0.2 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1, ease: "easeOut" }}>
             <img src="./assets/icon_3.png" alt="" className={styles.icon} />
             <h2 className={styles.feature_list_heading}>QR Codes</h2>
             <p className={styles.feature_list_details}>
               Generate QR codes to your business, events. Bring your audience
               and customers to your doorstep with this scan and go solution.
             </p>
-          </div>
-          <div className={styles.list_details} id="data_analytics">
+          </motion.div>
+          <motion.div className={styles.list_details} id="data_analytics" initial={{ opacity: 0, scale: 0.2 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: false }}
+          transition={{ duration: 1, ease: "easeOut" }}>
             <img src="./assets/icon_4.png" alt="" className={styles.icon} />
             <h2 className={styles.feature_list_heading}>Data Analytics</h2>
             <p className={styles.feature_list_details}>
               Receive data on the usage of either your shortened URL, custom
               URLs or generated QR codes. Embedded to monitor progress.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <section className={styles.pricing} id='pricing'>
-        <div className={styles.pricing_heading_sec}>
+        <motion.div className={styles.pricing_heading_sec} initial={{x:50}} whileInView={{x:0}}
+            transition={{duration: 1, ease:"easeOut"}}>
           <img src="./assets/line_2.png" alt="" className={styles.line_} />
           <h2 className={styles.pricing_title}>
             A <span>Price Perfect</span> For Your Needs.
@@ -133,7 +157,7 @@ const Home = () => {
             From catering for your personal, business, event, socials needs, you
             can be rest assured we have you in mind in our pricing.
           </p>
-        </div>
+        </motion.div>
         <div className={styles.pricing_cards}>
           <img
             src="./assets/card_1.png"
