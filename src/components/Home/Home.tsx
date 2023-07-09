@@ -53,27 +53,27 @@ const Home = () => {
           </h2>
         </div>
         <div className={styles.section_data} >
-          <motion.div className={styles.data_box} initial={{y:60}} whileInView={{y:0}} 
-      transition={{duration:1,ease:"easeOut"}}>
+          <motion.div className={styles.data_box} initial={{x:-50}} whileInView={{x:0}}
+            transition={{duration: 1, ease:"easeOut"}}>
             <h3 className={styles.data_heading}>3M</h3>
             <p className={styles.data_details}>Active users</p>
           </motion.div>
-          <motion.div className={styles.data_box} initial={{y:60}} whileInView={{y:0}} 
+          <motion.div className={styles.data_box} initial={{x:50}} whileInView={{x:0}} 
       transition={{duration:1,ease:"easeOut"}}>
             <h3 className={styles.data_heading}>60M</h3>
             <p className={styles.data_details}>
               Links & QR<br></br> codes created
             </p>
           </motion.div>
-          <motion.div className={styles.data_box} initial={{y:60}} whileInView={{y:0}} 
-      transition={{duration:1,ease:"easeOut"}}>
+          <motion.div className={styles.data_box} initial={{x:-50}} whileInView={{x:0}}
+            transition={{duration: 1, ease:"easeOut"}} >
             <h3 className={styles.data_heading}>1B</h3>
             <p className={styles.data_details}>
               Clicked & Scanned <br></br>connections
             </p>
           </motion.div>
-          <motion.div className={styles.data_box} initial={{y:60}} whileInView={{y:0}} 
-      transition={{duration:1,ease:"easeOut"}}>
+          <motion.div className={styles.data_box} initial={{x:50}} whileInView={{x:0}}
+            transition={{duration: 1, ease:"easeOut"}}>
             <h3 className={styles.data_heading}>300K</h3>
             <p className={styles.data_details}>App Integrations</p>
           </motion.div>

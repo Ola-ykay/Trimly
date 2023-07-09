@@ -128,7 +128,7 @@ input[type="password"] {
   color: #ffffff;
   border: none;
   outline: none;
-  border-radius: 50px;
+  border-radius: 10px;
   font-weight: lighter;
   margin-bottom: 10px;
   width: 400px;
@@ -204,7 +204,7 @@ input[type="password"] {
      .signup_form > div > input{
       width: 350px;
       margin-left: 5px;
-      margin-bottom: 8px;
+      margin-bottom: 25px;
 
  }
  .submit_btn{

@@ -355,11 +355,11 @@ right: 0%;
     width: 100px;
   }
   .signup_btn a{
-    font-size: 10px;
+    font-size: 12px;
     /* padding: 10px 15px; */
   }
   .more_btn{
-    font-size: 10px;
+    font-size: 12px;
   }
   .image_1, .image_2, .image_sec2{
     display: none;
