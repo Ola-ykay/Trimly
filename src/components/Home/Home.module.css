@@ -419,10 +419,22 @@ right: 0%;
     /* padding: 0 10px; */
     
   }
-  .list_details{
+  .list_details_1, .list_details_2, .list_details_3, .list_details_4{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     width: 300px;
     padding: 40px 0;
+  }
+  .list_details_1{
+    background: #AFDBF521;
+  }
+  .list_details_2{
+    background: #FFD6CD22;
+  }
+  .list_details_3{
+    background: #FDFF0020;
+  }
+  .list_details_4{
+    background: #F9F9F9;
   }
   .line_2 {
     right: -30px;

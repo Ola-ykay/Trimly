@@ -100,7 +100,7 @@ const Home = () => {
         </motion.div>
 
         <div className={styles.features_list}>
-          <motion.div className={styles.list_details} id='link_shortening' initial={{ opacity: 0, scale: 0.2 }}
+          <motion.div className={styles.list_details_1} id='link_shortening' initial={{ opacity: 0, scale: 0.2 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 1.5, ease: "easeOut" }}>
@@ -111,7 +111,7 @@ const Home = () => {
               Shorten your URL at scale, URL redirects.
             </p>
           </motion.div>
-          <motion.div className={styles.list_details} id="custom_codes" initial={{ opacity: 0, scale: 0.2 }}
+          <motion.div className={styles.list_details_2} id="custom_codes" initial={{ opacity: 0, scale: 0.2 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 1, ease: "easeOut" }}>
@@ -122,7 +122,7 @@ const Home = () => {
               want! A solution for socials and businesses.
             </p>
           </motion.div>
-          <motion.div className={styles.list_details} id="qr_codes" initial={{ opacity: 0, scale: 0.2 }}
+          <motion.div className={styles.list_details_3} id="qr_codes" initial={{ opacity: 0, scale: 0.2 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 1, ease: "easeOut" }}>
@@ -133,7 +133,7 @@ const Home = () => {
               and customers to your doorstep with this scan and go solution.
             </p>
           </motion.div>
-          <motion.div className={styles.list_details} id="data_analytics" initial={{ opacity: 0, scale: 0.2 }}
+          <motion.div className={styles.list_details_4} id="data_analytics" initial={{ opacity: 0, scale: 0.2 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: false }}
           transition={{ duration: 1, ease: "easeOut" }}>

@@ -83,6 +83,7 @@ width: 91%;
   
 }
 
+
  /* ******mobile responsiveness ****** */
  @media screen and (max-width: 768px) {
   .faq_line{
@@ -104,13 +105,13 @@ width: 91%;
 
   }
   .faq_item:before{
-    /* width: 100%;
-    left: 0; */
+    width: 100%;
+    left: 0;
     /* right: 5%; */
   }
   .icon{
     font-size: 40px;
-    padding: 10px;
+    padding: 5px;
   }
  
  }
@@ -122,14 +123,7 @@ width: 91%;
 
   }
   
-  /* .faqs{
-    overflow: hidden;
-  } */
-  
-  /* .faq_item:after{
-    width: 80%;
-    right: 5%;
-  } */
+
   .faq_line{
     top: 7%;
     left: 33%;

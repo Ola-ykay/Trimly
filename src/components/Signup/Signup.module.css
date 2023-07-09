@@ -230,3 +230,6 @@ input[type="password"] {
     margin-bottom: 25px;
   }
 }
+.submit_btn{
+  width: 320px;
+}

@@ -63,12 +63,15 @@ const FAQs: FAQItem[] = [
 const FAQSection: React.FC = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
+  // const toggleFAQ = (index: number) => {
+  //   if (expandedIndex === index) {
+  //     setExpandedIndex(null);
+  //   } else {
+  //     setExpandedIndex(index);
+  //   }
+  // };
   const toggleFAQ = (index: number) => {
-    if (expandedIndex === index) {
-      setExpandedIndex(null);
-    } else {
-      setExpandedIndex(index);
-    }
+    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
